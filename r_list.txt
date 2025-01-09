@@ -1,0 +1,10 @@
+-OH
+-NH2
+-CH3
+-C6H5
+-F
+-Br
+-COOH
+-CONH2
+-SO2NH2
+-CN
