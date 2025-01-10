@@ -1,4 +1,3 @@
 CCNc1ccc(cn1)C#N     6-(ethylamino)pyridine-3-carbonitrile
-NC(=O)[CH]1CCC[CH]1c2cscc2     (1R,2S)-2-(thiophen-3-yl)cyclopentane-1-carboxamide
-NC(=O)c1ccc(NC(=O)[CH]2CCCO2)cc1     (2~{S})-~{N}-(4-aminocarbonylphenyl)oxolane-2-carboxamide
+Cc1ccccc1CN2CCCN(CC2)C(=O)C     1-{4-[(2-methylphenyl)methyl]-1,4-diazepan-1-yl}ethan-1-one
 C[CH]1[CH](O)CCCN1Cc2ccccc2     (2R,3R)-1-benzyl-2-methylpiperidin-3-ol
