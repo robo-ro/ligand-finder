@@ -1,12 +1,9 @@
-{% extends "base.html" %}
 
-{% block content %}
 
 
 <!-- R-Numeration Page -->
 <div>
-  <img src="assets/Animation - 1736461474899.json" alt="loading animation">
-</img>
+    <img src="assets/load.gif" width="700px" height="500px">
 <h3>Conduting R-Enumeration.</h3>
 <h3>Stand by... Something’s cooking here.</h3>
 </div>
@@ -16,16 +13,21 @@
 
 
   body {
-    background-image: linear-gradient(#221324, #331E36, #332549, #332D61, #333477);
+    background-color: #D1D1D1;
     font-family: arial;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 45px;
-    color: #D1D1D1;
+    color: #331E36;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  h3 {
+    text-align: center;
   }
 
   .text-primary {
     font-size: 100px;
   }
 </style>
-{% endblock content %}
