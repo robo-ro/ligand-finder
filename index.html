@@ -36,7 +36,9 @@
         <img src="{{ smileImage }}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{ scaffoldName }}</h5>
-          <a href="#" class="btn btn-primary">Select</a>
+          <div>{% r_enumeration_auto(scaffold)% }</div>
+          {% if scaffoldselectBtn %}
+          <button id="scaffoldselectBtn" type="submit" class="btn btn-primary" onclick="{{}}">Select</button>
         </div>
       {% endfor %}
     </div>
