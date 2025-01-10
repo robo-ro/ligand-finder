@@ -1,4 +1,3 @@
-CCNc1ccc(cn1)C#N     
-NC(=O)[CH]1CCC[CH]1c2cscc2    
-NC(=O)c1ccc(NC(=O)[CH]2CCCO2)cc1
+CCNc1ccc(cn1)C#N
+Cc1ccccc1CN2CCCN(CC2)C(=O)C
 C[CH]1[CH](O)CCCN1Cc2ccccc2

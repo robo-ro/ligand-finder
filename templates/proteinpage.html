@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- protein page -->
+  <div>
+    <p>1 → Enter protein name</p>
+    <div class="form-floating mb-3">
+      <input type="search"
+             class="form-control"
+             id="floatingInput"
+             placeholder="Search">
+      <label for="floatingInput">Search</label>
+    </div>
+  </div>
+
+  <div>
+    <a class="btn btn-primary" href="http://localhost:8006/scaffoldpage">Search</a>
+  </div>
+
+  <style>
+
+  body {
+    background-color: #27172A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 45px;
+    color: #D1D1D1;
+  }
+
+  .text-primary {
+    font-size: 100px;
+  }
+
+  p {
+    font-size: 50px;
+  }
+
+  </style>
+
+{% endblock content %}

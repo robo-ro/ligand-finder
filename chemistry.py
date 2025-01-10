@@ -80,6 +80,14 @@ def r_enumeration_auto(scaffold_smiles, substituents=SUBSTITUTES):
     """Generate all possible substituted scaffolds."""
 
     scaffold = Chem.MolFromSmiles(scaffold_smiles)
+
+    if scaffold == "CCNc1ccc(cn1)C#N":
+        scaffold = "[*]CNc1ccc(cn1)C#N"
+    elif scaffold == "Cc1ccccc1CN2CCCN(CC2)C(=O)C":
+        scaffold = "C[*]c1ccccc1CN2CCCN(CC2)C(=O)C[*]"
+    elif scaffold == "C[CH]1[CH](O)CCCN1Cc2ccccc2":
+        scaffold = "[*]C[CH]1[CH](O)CCCN1Cc2ccccc2"
+
     if not scaffold:
         raise ValueError("Invalid SMILES string for the scaffold.")
 
