@@ -16,10 +16,10 @@
   <h3>Scientists' way to efficiency.</h3>
   <p>
     LigandFinder is Proteome’s web-based application that allows scientists to find all possible ligands that inhibits a given protein’s activity for drug discovery.
-  </p> 
+  </p>
 
   <div>
-    <button type="button" class="btn btn-secondary btn-lg">Get Started</button>
+    <button onclick="location.href='proteinpage.html'">Get started</button>
   </div>
 </div>
 
@@ -42,13 +42,13 @@
   {% for smiles in all_smiles %}
     <div class="card" style="width: 18rem;">
       <img src='{{ url_for("get_compound_image") }}?smiles={{ smiles|urlencode }}'
-         alt="{{ smiles }}"
-         class="card-img-top w-100 overflow-hidden"
-         style="aspect-ratio: 1">
+           alt="{{ smiles }}"
+           class="card-img-top w-100 overflow-hidden"
+           style="aspect-ratio: 1">
       <div class="card-body">
         <h5 class="card-title">{{ smiles }}</h5>
         <form action='{{ url_for("r_enumeration_auto") }}' method="GET">
-          <input type="hidden" id="smiles" name="smiles" value="{{ smiles }}"/>
+          <input type="hidden" id="smiles" name="smiles" value="{{ smiles }}" />
           <button type="submit" class="btn btn-primary">Select</button>
         </form>
       </div>
