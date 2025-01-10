@@ -55,6 +55,10 @@ def substitute_and_evaluate(args):
 
         # Calculate properties
         final_mol = Chem.MolFromSmiles(mol_smiles_cleaned)
+        if final_mol is None:
+            return None  # Skip invalid molecules
+        # Sanitize the molecule
+        Chem.SanitizeMol(final_mol)
         properties = calculate_properties(final_mol)
         return {"SMILES": mol_smiles_cleaned, **properties}
     except Exception as e:
