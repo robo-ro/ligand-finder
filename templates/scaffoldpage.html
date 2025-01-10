@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <!-- scaffold page  -->
+  <h2>2 → Choose a scaffold to explore</h2>
+
+  <div class="compound-card-grid"
+       style="display: flex;
+              flex-wrap: wrap;
+              gap: 16px;
+              justify-content: center">
+    {% for smiles in all_smiles %}
+      <div class="card"
+           style="width: 18rem;
+                  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                  border-radius: 8px">
+        <img src='{{ url_for("get_compound_image") }}?smiles={{ smiles|urlencode }}'
+             alt="{{ smiles }}"
+             class="card-img-top"
+             style="aspect-ratio: 1;
+                    width: 100%;
+                    object-fit: contain;
+                    padding: 8px;
+                    border-bottom: 1px solid #ddd">
+        <div class="card-body" style="text-align: center;">
+          <h5 class="card-title" style="font-size: 1rem; margin-bottom: 8px;">{{ smiles }}</h5>
+          <form action='{{ url_for("r_enumeration_auto_caller") }}' method="GET">
+            <input type="hidden" id="smiles" name="smiles" value="{{ smiles }}" />
+
+            <button onclick="location.href='renumpage.html'">Select</button>
+            <!-- <button type="submit" class="btn btn-primary" style="padding: 8px 16px;">Select</button> -->
+
+          </form>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  <style>
+
+
+  body {
+    background-image: linear-gradient(#221324, #331E36, #332549, #332D61, #333477);
+    font-family: arial;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 45px;
+    color: #D1D1D1;
+  }
+
+  .text-primary {
+    font-size: 100px;
+  }
+  </style>
+{% endblock content %}

@@ -6,5 +6,6 @@
   },
   "[html][jinja][jinja-html]": {
     "editor.defaultFormatter": "monosans.djlint"
-  }
+  },
+  "liveServer.settings.port": 5501
 }
