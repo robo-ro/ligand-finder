@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+
   <!-- home page   -->
   <div class=".bg-primary.bg-gradient">
     <div>
@@ -20,14 +21,18 @@
 
 <!-- protein page -->
 <div>
+
   <h2>1 → Enter protein name</h2>
+
   <div class="form-floating mb-3">
     <input type="search"
            class="form-control"
            id="floatingInput"
            placeholder="Search">
-    <label for="floatingInput">Search Protein</label>
+    <label for="floatingInput">Search</label>
   </div>
+
+
 </div>
 
 <!-- scaffold page  -->
@@ -81,4 +86,14 @@
     </a>
   </div>
 </div>
+
+<style>
+  html, body {
+    font-family: arial; 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+</style>
+
 {% endblock content %}
